@@ -15,7 +15,7 @@ class Payment < ActiveRecord::Base
     
     Stripe::Charge.create customer: customer.id, 
                           amount: 1000, 
-                          description: 'Premium', 
+                          description: 'Basic', 
                           currency: 'usd'
   end
   
